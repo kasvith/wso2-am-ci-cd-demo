@@ -15,6 +15,7 @@ pipeline {
         stage('Deploy to Test') {
             environment{
                 ENV = 'test'
+                RETRY = '80'
             }
             steps {
                 echo 'Deploying to Test'
@@ -24,6 +25,7 @@ pipeline {
         stage('Deploy to Production') {
             environment{
                 ENV = 'prod'
+                RETRY = '60'
             }
             steps {
                 echo 'Deploying to Production'

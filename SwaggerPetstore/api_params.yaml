@@ -1,0 +1,19 @@
+environments:
+  - name: dev
+    endpoints:
+      production:
+        url: 'https://dev.wso2.com'
+        config:
+          retryTimeOut: 120
+  - name: test
+    endpoints:
+      production:
+        url: 'https://test.wso2.com'
+        config:
+          retryTimeOut: 80
+  - name: prod
+    endpoints:
+      production:
+        url: 'https://prod.wso2.com'
+        config:
+          retryTimeOut: 60

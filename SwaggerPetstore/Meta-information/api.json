@@ -1,0 +1,402 @@
+{
+  "id": {
+    "providerName": "admin",
+    "apiName": "SwaggerPetstore",
+    "version": "1.0.0"
+  },
+  "uuid": "4e70e15c-dd4d-405c-825d-38117b3d4842",
+  "description": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
+  "type": "HTTP",
+  "context": "/v2/1.0.0",
+  "contextTemplate": "/v2/{version}",
+  "tags": [],
+  "documents": [],
+  "lastUpdated": "Jul 10, 2019 10:57:05 AM",
+  "availableTiers": [
+    {
+      "name": "Unlimited",
+      "displayName": "Unlimited",
+      "description": "Allows unlimited requests",
+      "requestsPerMin": 2147483647,
+      "requestCount": 2147483647,
+      "unitTime": 0,
+      "timeUnit": "ms",
+      "tierPlan": "FREE",
+      "stopOnQuotaReached": true
+    }
+  ],
+  "availableSubscriptionLevelPolicies": [],
+  "uriTemplates": [
+    {
+      "uriTemplate": "/pet",
+      "httpVerb": "POST",
+      "authType": "Any",
+      "httpVerbs": [
+        "POST",
+        "PUT"
+      ],
+      "authTypes": [
+        "Any",
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited",
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null,
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/user/{username}",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET",
+        "DELETE",
+        "PUT"
+      ],
+      "authTypes": [
+        "Any",
+        "Any",
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited",
+        "Unlimited",
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null,
+        null,
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/pet/findByStatus",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/user/createWithList",
+      "httpVerb": "POST",
+      "authType": "Any",
+      "httpVerbs": [
+        "POST"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/pet/{petId}/uploadImage",
+      "httpVerb": "POST",
+      "authType": "Any",
+      "httpVerbs": [
+        "POST"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/store/inventory",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/user/login",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/user",
+      "httpVerb": "POST",
+      "authType": "Any",
+      "httpVerbs": [
+        "POST"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/user/createWithArray",
+      "httpVerb": "POST",
+      "authType": "Any",
+      "httpVerbs": [
+        "POST"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/pet/findByTags",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/store/order",
+      "httpVerb": "POST",
+      "authType": "Any",
+      "httpVerbs": [
+        "POST"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/user/logout",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/pet/{petId}",
+      "httpVerb": "POST",
+      "authType": "Any",
+      "httpVerbs": [
+        "POST",
+        "GET",
+        "DELETE"
+      ],
+      "authTypes": [
+        "Any",
+        "Any",
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited",
+        "Unlimited",
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null,
+        null,
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/store/order/{orderId}",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET",
+        "DELETE"
+      ],
+      "authTypes": [
+        "Any",
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited",
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null,
+        null
+      ],
+      "mediationScripts": {}
+    }
+  ],
+  "apiHeaderChanged": false,
+  "apiResourcePatternsChanged": false,
+  "status": "PUBLISHED",
+  "visibility": "public",
+  "gatewayLabels": [],
+  "endpointSecured": false,
+  "endpointAuthDigest": false,
+  "transports": "http,https",
+  "advertiseOnly": false,
+  "corsConfiguration": {
+    "corsConfigurationEnabled": false,
+    "accessControlAllowOrigins": [
+      "*"
+    ],
+    "accessControlAllowCredentials": false,
+    "accessControlAllowHeaders": [
+      "authorization",
+      "Access-Control-Allow-Origin",
+      "Content-Type",
+      "SOAPAction"
+    ],
+    "accessControlAllowMethods": [
+      "GET",
+      "PUT",
+      "POST",
+      "DELETE",
+      "PATCH",
+      "OPTIONS"
+    ]
+  },
+  "endpointConfig": "{\"production_endpoints\":{\"url\":\"http://localhost:8080\",\"config\":null,\"template_not_supported\":false},\"sandbox_endpoints\":{\"url\":\"http://localhost:8081\",\"config\":null,\"template_not_supported\":false},\"endpoint_type\":\"http\"}",
+  "responseCache": "Disabled",
+  "cacheTimeout": 300,
+  "implementation": "ENDPOINT",
+  "scopes": [],
+  "isDefaultVersion": false,
+  "isPublishedDefaultVersion": false,
+  "environments": [
+    "Production and Sandbox"
+  ],
+  "createdTime": "1562736377395",
+  "additionalProperties": {},
+  "monetizationProperties": {},
+  "isMonetizationEnabled": false,
+  "environmentList": [
+    "SANDBOX",
+    "PRODUCTION"
+  ],
+  "apiSecurity": "oauth2,oauth_basic_auth_mandatory",
+  "endpoints": [],
+  "accessControl": "all",
+  "rating": 0.0,
+  "isLatest": true
+}
